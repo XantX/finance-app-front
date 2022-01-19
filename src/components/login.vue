@@ -11,7 +11,9 @@
         <label class="pass-label">Password</label>
       </div>
       <div class="button-form">
-        <button class="login-button">Sign in</button>
+        <router-link to="/about">
+        <button class="login-button" to="/about">Sign in</button>
+        </router-link>
         <a class="forget-pass" href="#$">Forget password</a>
       </div>
     </div>
@@ -33,6 +35,10 @@ export default {
   text-decoration: none;
   color: var(--gray);
   margin-top: 0.5rem;
+}
+
+.button-form .forget-pass:hover{
+  color: var(--aqua);
 }
 .button-form .login-button{
   border: none;
